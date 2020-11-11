@@ -1,0 +1,403 @@
+/*---------Makes all pfp's squared---------*/
+/*Note: Does NOT work for VC*/
+[class*="avatar"], 
+[class*="avatar"] * img{
+  border-radius: calc(var(--rs-avatar-shape) + 4%) !important;
+}
+/*----------------------------------------*/
+
+
+/*------Makes pfp's squared for VC------*/
+.wrapper-2QE8vf foreignObject {
+   mask: none;
+}
+.voiceAvatar-14IynY,
+.border-Jn5IOt,
+.wrapper-2QE8vf.ringingIncoming-38YcLn:after,
+.wrapper-2QE8vf.ringingOutgoing-mbXhhQ:after {
+   border-radius: calc(var(--rs-avatar-shape) + 4%);
+}
+/*--------------------------------------*/
+
+
+/*------User Popout Modals-----*/
+/*On-click*/
+.userPopout-3XzG_A{
+    width: 375px; /*Change depending on appearance zoom levels*/
+}
+/*Expanded*/
+.root-SR8cQa{
+    width: 750px; /*Change depending on appearance zoom levels*/
+}
+/*-----------------------------*/
+
+
+/*------Center Server Name------*/
+.name-3YKhmS{
+    text-align: center;
+}
+/*------------------------------*/
+
+
+/*------Yellow Permission Ticks------*/
+.passthroughSelected-1Eq0Kl {
+  background-color: var(--idle-color) !important; /*Change if idle-color variable isn't yellow anymore*/
+}
+
+.passthrough-1c2ewQ:not(.passthroughSelected-1Eq0Kl) img {
+  content: url("https://cdn.discordapp.com/attachments/729456400077422623/748313547800313906/yellow.svg");
+}
+/*---------------------------------*/
+
+
+/*--------------Better utilization of space in server emoji settings-------------*/
+.emojiUploader-1f0pVx,
+div[class*="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6 marginBottom4-2qk4Hy"] {
+    display: none
+}
+
+.emojiRow-zIc7ZX {
+    display: inline-flex;
+    margin-right: 50px
+}
+/*------------------------------------------------------------------------------*/
+
+
+/*------Call Dock------*/
+.wrapper-3EGhDO {
+    background-color: var(--background-secondary);
+    border-radius: 25px;
+    padding: 0px;
+}
+
+.colorable-1bkp8v.white-3GPOIp, .colorable-1bkp8v.white-3GPOIp .centerIcon-2G6o-T {
+    color: currentColor;
+}
+
+.colorable-1bkp8v.primary-3NQg8g,
+.colorable-1bkp8v.primary-3NQg8g.active-1QRrIS, .colorable-1bkp8v.primary-3NQg8g:hover, 
+.colorable-1bkp8v.white-3GPOIp,
+.centerButton-3CaNcJ,
+.colorable-1bkp8v.white-3GPOIp.active-1QRrIS, .colorable-1bkp8v.white-3GPOIp:hover,
+.colorable-1bkp8v.red-33-Lnk {
+    background: none !important;
+}
+/*---------------------*/
+
+
+/*------Search Bar Settings------*/
+.search-2oPWTC .searchBar-3dMhjb {
+    width: 225px; /*30px too small. farther and smaller to click on. also cannot see what is typed in the bar sometimes which is annoying*/
+    transition-duration: 175ms;
+    /*search bar size when left alone*/
+}
+
+.search-2oPWTC .searchBar-3dMhjb:hover, .search-2oPWTC.focused-31_ccS .searchBar-3dMhjb {
+    width: 300px; /**/
+    /*search bar size when hovered or selected on*/
+}
+
+.search-2oPWTC .icon-38sknP {
+    cursor: pointer;
+}
+/*----------------------------*/
+
+
+/*-------Better RTC Connection popout-------*/
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] {
+     left: 72px !important;
+}
+.container-2x5lvQ {
+     width: 240px;
+     box-shadow: none;
+}
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] .container-2x5lvQ header {
+     background-color: var(--toast-header);
+}
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] .container-2x5lvQ section {
+     background-color: var(--deprecated-panel-background);
+}
+.container-2x5lvQ section p:nth-of-type(1) {
+     font-size: 0;
+}
+.container-2x5lvQ section p:nth-of-type(2) {
+     display: none;
+}
+.container-2x5lvQ section strong {
+     font-size: 14px;
+     white-space: pre;
+}
+.container-2x5lvQ section strong::before {
+     font-weight: normal;
+}
+.container-2x5lvQ section strong:nth-of-type(1)::before {
+     content: 'Server: ';
+}
+.container-2x5lvQ section strong:nth-of-type(2)::before {
+     content: 'Average Ping: ';
+}
+.container-2x5lvQ section strong:nth-of-type(3)::before {
+     content: 'Last Ping: ';
+}
+.container-2x5lvQ section strong:nth-of-type(4)::before {
+     content: 'Packet Loss: ';
+}
+/*---------------------------------------*/
+
+
+/*------Larger Profile Modal Picture-------*/
+.headerTop-3C2Zn0 .avatarWrapper-3H_478 .wrapper-3t9DeA {
+    height: 225px !important;
+    width: 225px !important;
+    /*change depending on the size of profile modal popout*/
+}
+
+.avatarHint-1qgaV3 {
+    width: 108%;
+    height: 108%;
+    margin-top: -9px;
+    margin-left: -9px;
+}
+
+.avatarHintInner-Dco91E {
+    font-size: 8px;
+}
+/*--------------------------------------*/
+
+
+/*------Watermark Adjustments------*/
+.typeWindows-1za-n7>.wordmark-2iDDfm:before {
+    content: "Task Force 141 Communications"; /*Custom watermark text*/
+    font-size: 19px;
+    color: var(--main-color); /*default: var(--main-color)*/
+    filter: drop-shadow(0 0 4px var(--main-color)); /*Text shadows*/
+    /*font-family is on "Discord" by Discord's original default, but it looks ugly so let's not use it*/
+} /*Changes top-left watermark*/
+
+.wordmark-2iDDfm > svg {
+  width: 0px; /*Removes Discord's default watermark*/
+}
+
+.typeWindows-1za-n7>.wordmark-2iDDfm:after {
+    content: none;
+} /*Set content to "none" to remove the top left watermark*/
+
+.container-3baos1:before {
+    content: "Task Force 141";
+} /*Set content to "none" to remove the bottom left watermark*/
+
+.container-3baos1:after {
+    content: none;    
+} /*Set content to "none" to remove the bottom left watermark*/
+
+.container-3baos1 {
+    height: 35px;
+}/* Moves the bottom left settings/profile/mute area down */
+/*-----------------------------*/
+
+
+/*---------------Display Links on Profile Modal---------------------*/
+.connectedAccount-36nQx7 {
+    display:flex;
+    flex-wrap:wrap;
+    height:auto;
+}
+
+.connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F {
+    width:24px;
+    height:24px;
+}
+.connectedAccount-36nQx7 .anchor-3Z-8Bb {
+    width:100%;
+    display:block;
+    position:relative;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    line-height:normal;
+}
+.connectedAccount-36nQx7 .anchor-3Z-8Bb svg {
+    display:none;
+}
+
+.connectedAccount-36nQx7 .anchor-3Z-8Bb:after {
+    content:attr(href);
+    width:100%;
+    white-space:nowrap;
+}
+/*--------------------------------------------------------------------*/
+
+
+/*---------Top-Right Buttons Settings----------*/
+/*Minimize Button*/
+.titleBar-AC4pGV>*:nth-child(4) {
+  background-color: rgba(201, 201, 201, 0); /*Transparent background color*/
+  transition: background-color 250ms linear;
+}
+.titleBar-AC4pGV > *:nth-child(4):hover {
+  background-color: var(--danger-color);
+}
+
+/*Windowed/Full Screen Button*/
+.titleBar-AC4pGV>*:nth-child(3) {
+  background-color: rgba(201, 201, 201, 0); /*Transparent background color*/
+  transition: background-color 250ms linear;
+}
+.titleBar-AC4pGV > *:nth-child(3):hover {
+  background-color: var(--hover-color);
+}
+
+/*Close Button*/
+.titleBar-AC4pGV>*:nth-child(2) {
+  background-color: rgba(201, 201, 201, 0); /*Transparent background color*/
+  transition: background-color 250ms linear;
+}
+.titleBar-AC4pGV > *:nth-child(2):hover {
+  background-color: var(--main-color);
+}
+/*----------------------------------------*/
+
+
+/*-----Wide Screen Settings-----*/
+.sidebarRegion-VFTUkN {
+  flex-grow: 0;
+}
+
+.contentColumnDefault-1VQkGM {
+  max-width: calc(100% - 60px);
+}
+/*-----------------------------*/
+
+
+/*---------Denitrofy Discord-----------*/
+[href="/store"], .buttons-3JBrkn > .button-38aScr {
+  /*.button-38aScr.noFocus-2C7BQj try this if the chat bar icon doesn't work*/
+  display: none;
+}
+/*-------------------------------------*/
+
+
+/*drop down menus background color*/
+.container-3ayLPN, .layer-v9HyYc {
+  background: #000000 !important;
+  /*search bar dropdown: container-3ayLPN
+    profile right-click dropdown: layer-v9HyYc*/
+}
+
+
+/*Discord join buttons in chat box area (for example, server invites)*/
+.container-1ov-mD .wrapper-35wsBm .lookFilled-1Gx00P.colorGreen-29iAKY {
+    background: var(--main-color);
+    border: 0px;
+    transition: all 300ms linear;
+}
+
+.container-1ov-mD .wrapper-35wsBm .lookFilled-1Gx00P.colorGreen-29iAKY:hover{
+  background:var(--hover-color);
+}
+
+
+/*-----Add/Explore Server Buttons-----*/
+.circleIconButton-jET_ig {
+  color: var(--main-color);
+  /*Sets color of the actual icon*/
+}
+/*------------------------------------*/
+
+
+/*-------Ping Text Customization-------*/
+/*When hovering over pings*/
+.topic-TCb_qw .wrapper-3WhCwL:hover,.markup-2BOw-j .wrapper-3WhCwL:hover, .theme-dark .mentioned-xhSam7:hover .mention:hover, .theme-light .mentioned-xhSam7:hover .mention:hover{
+  color:#fff;
+  /*Sets color of text. defaut: #fff*/
+  background: var(--main-color) !important;
+  /*Sets color of small highlight box around the ping. default: var(--main-color)*/
+}
+
+/*When someone else is @'d*/
+.topic-TCb_qw .wrapper-3WhCwL, .markup-2BOw-j .wrapper-3WhCwL{
+  background-color: #5f86ae30;
+  /*sets small highlight box just for the ping. might want to change depending on main color. default: rgba(255, 255, 255, 0.04)*/
+  color:var(--main-color);
+  /*text color of ping. note: this part affects all pings, including your own. default: rgba(255, 255, 255, 0.7)*/
+}
+
+/*When you get @'d*/
+.theme-dark .mentioned-xhSam7 .mention, .theme-light .mentioned-xhSam7 .mention{
+  background-color: #5f86ae30 !important;
+  /*sets small highlight box just for your mention. might want to change depending on main color.*/
+  border-radius: 5px;
+  padding: 1px 4px;
+
+  /*creates the same small box around your own mentions that is created when other people are pinged*/
+}
+
+/*Mentioned Highlight Box Around Entire Message*/
+.message-2qnXI6.mentioned-xhSam7 {
+  background: none;
+  /*removes highlight box that highlights the ping as well as the rest of the message*/
+}
+.mentioned-xhSam7:before {
+  display: none;
+  /*removes the vertical line thing that appears @ very left*/
+}
+/*------------------------------------*/
+
+
+/*-------Plus Button Popout when LOistening to Spotify--------*/
+.popout-2iWAc- { 
+  background-color: #000000;
+  /*sets background color to black*/
+  /*affects the background color for customized status dropdown*/
+}
+
+.attachPopoutRowText-2R5RC2  {/*only affects spotify*/
+  color:var(--main-color); /*text color for options listed*/
+}
+/*-------------------------------------------------------------*/
+
+
+/*-----vc bar around pfp when talking-----*/
+.border-Jn5IOt.speaking-B2MXPi {
+  -webkit-box-shadow: inset 0 0 0 2px var(--main-color),inset 0 0 0 3px var(--background-floating);
+  box-shadow: inset 0 0 0 2px var(--main-color),inset 0 0 0 3px var(--background-floating);
+} /*default color: #43b581*/
+/*---------------------------------------*/
+
+
+/*-----Mute/Deafen/Settings Buttons-----*/
+/*Button unhovered*/
+.button-14-BFJ.enabled-2cQ-u7{
+  border-radius: 7px;/*keep same as border-radius below*/
+  /*meant to make transitions look normal*/
+}
+
+/*Button on hover*/
+.button-14-BFJ.enabled-2cQ-u7:hover {
+  background-color: var(--main-color);
+  /*sets background color to icon*/
+  border-radius: 7px;
+  /*sets background shape to rounded square*/
+}
+
+/*Button separators*/
+.container-3baos1>.flex-1O1GKY>:nth-child(n+2):before, .container-1giJp5>.flex-1O1GKY>:nth-child(n+2):before{
+  display: none;
+  /*removes the dumb ugly lines between icons*/
+}
+
+/*Experimental code below
+.button-14-BFJ>.contents-18-Yxp>svg{
+  color: var(--main-color);
+  opacity: 0.6;
+}
+.button-14-BFJ>.contents-18-Yxp>svg:hover{
+  color:#fff;
+}*/
+/*
+Goals
+1) Remove the dumbass line bullshit when hovering between icons
+2) Change the initial color of icon and make it swap to white on hover
+3) Center the icons
+4) Remove the stupid hover text that appears, goes for pretty much everything, since we aren't discord noobs
+*/
+/*-------------------------------------*/
